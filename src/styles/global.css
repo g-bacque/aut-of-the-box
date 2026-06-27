@@ -1,0 +1,109 @@
+@import './tokens.css';
+@import './components.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: var(--aotb-maroon); /* el marco oscuro alrededor de la app */
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100%;
+}
+
+/* Columna central tipo móvil. En escritorio queda centrada;
+   en móvil ocupa todo el ancho. */
+.app-shell {
+  max-width: var(--app-width);
+  margin: 0 auto;
+  min-height: 100dvh;
+  background: var(--aotb-cream);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* La zona con scroll de cada pantalla */
+.screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen-body {
+  flex: 1;
+  padding: 0 20px;
+}
+
+/* Tipografía utilitaria */
+.display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--aotb-red);
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+/* Tarjeta base */
+.card {
+  background: #fff;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-card);
+  padding: 12px 14px;
+}
+
+/* Botón con foco visible accesible */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a,
+button,
+[role='button'] {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+[role='button']:focus-visible {
+  outline: 3px solid var(--aotb-red);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pressable {
+    transition: transform 0.08s ease;
+  }
+  .pressable:active {
+    transform: scale(0.98);
+  }
+}

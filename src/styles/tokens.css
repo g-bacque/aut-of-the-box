@@ -1,0 +1,31 @@
+:root {
+  /* Paleta de marca Aut Of The Box */
+  --aotb-cream:  #F8F5E6; /* fondo */
+  --aotb-maroon: #350A16; /* texto y superficies oscuras */
+  --aotb-red:    #FD472A; /* acción principal */
+  --aotb-lime:   #E0E874; /* acento / destacados */
+  --aotb-blue:   #A1D5FF; /* acento secundario */
+  --aotb-olive:  #604A01; /* acento terciario */
+
+  /* Roles de texto sobre fondo crema */
+  --text-primary:   #350A16;
+  --text-secondary: rgba(53, 10, 22, 0.62);
+  --text-tertiary:  rgba(53, 10, 22, 0.42);
+  --border-soft:    rgba(53, 10, 22, 0.10);
+
+  /* Texto sobre fondo granate */
+  --on-dark:           #F8F5E6;
+  --on-dark-secondary: rgba(248, 245, 230, 0.70);
+
+  /* Tipografía */
+  --font-display: 'Podium Soft', 'Baloo 2', sans-serif; /* titulares */
+  --font-body:    'DM Sans', sans-serif;                /* texto */
+
+  /* Forma */
+  --radius-card: 16px;
+  --radius-lg:   22px;
+  --radius-pill: 999px;
+
+  /* Ancho máximo de la app (móvil centrado en escritorio) */
+  --app-width: 440px;
+}
